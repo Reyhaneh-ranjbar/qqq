@@ -1,0 +1,191 @@
+@import "reset";
+$base-color: white;
+$primary-color: #47b2e4;
+
+.bannercolor {
+    background-color: #37517e;
+}
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 10px 0 10px 30px;
+        justify-content: space-between;
+        text-decoration: none;
+        display: flex;
+        margin-left: 35px;
+        color: white;
+    }
+
+    .nav-link {
+        color: $base-color;
+    }
+
+    .active {
+        color: $primary-color;
+    }
+}
+.row{
+    color: white;
+}
+@mixin bordered($color) {
+    border: solid $color;
+}
+
+.scrollto {
+    @include bordered($primary-color);
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: $base-color;
+    background-color: $primary-color;
+    text-decoration: none;
+}
+.btn-watch-video{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: $base-color;
+}
+
+.cliens {
+    background-color: #f3f5fa;
+    img{
+        max-width: 45%;
+        padding: 15px 0;
+        filter: grayscale(100);
+    }
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px;
+    color: #37517e;
+}
+
+.about {
+    ul {
+        list-style: none;
+    }
+
+    padding-bottom: 50px
+}
+
+.btn-learn-more {
+    @include bordered($primary-color);
+    color: $primary-color;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+.why-us {
+    background-color: #f3f5fa;
+    padding: 60px 100px 0 100px;
+}
+
+.content h3 {
+    color: #37517e;
+}
+
+.accordion-list {
+    ul {
+        list-style: none;
+    }
+
+    li {
+        background-color: white;
+        margin: 25px;
+        padding: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.skills {
+    padding: 60px 0;
+
+    .content h3 {
+        font-weight: 700;
+        font-size: 32px;
+        color: #37517e;
+    }
+
+    .progress {
+        height: 60px;
+        display: block;
+        background: none;
+        border-radius: 0;
+    }
+
+    .progress .skill {
+        padding: 0;
+        margin: 0 0 6px 0;
+        display: block;
+        font-weight: 600;
+        color: #37517e;
+    }
+
+    .progress .skill .val {
+        float: right;
+        font-style: normal;
+    }
+
+    .progress-bar-wrap {
+        background: #e8edf5;
+        height: 10px;
+    }
+
+    .progress-bar {
+        height: 10px;
+        transition: 0.9s;
+        background-color: #4668a2;
+    }
+}
+
+.services {
+    background-color: #f3f5fa;
+    padding-top: 30px;
+
+    .icon-box {
+        background-color: white;
+        padding: 60px;
+    }
+
+    .icon-box a {
+        text-decoration: none;
+        color: #37517e;
+        padding: 10px;
+    }
+}
+
+.cta {
+    background-color: rgba(40, 58, 90, 0.9);
+    padding: 120px 0;
+    color: white;
+
+    a {
+        text-decoration: none;
+        @include bordered(white);
+        padding: 15px 35px;
+        border-radius: 50px;
+        color: white;
+    }
+}
